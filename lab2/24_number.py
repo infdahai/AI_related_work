@@ -48,6 +48,16 @@ class TiMapTree():
             zero_y : [0,4]
             arrow  : [0,3]
         """
+        temp = [zero_x,zero_y]
+        if arrow==0 :
+            temp[1] +=1
+        elif arrow == 1 :
+            temp[1] -= 1
+        elif arrow == 2 :
+            temp[0] -=1
+        else:
+            temp[0] +=1
+
         return
 
     def hrcs_func(self):
